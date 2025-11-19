@@ -1,4 +1,5 @@
 import { ArrowUpRight, Bell, Coins, Sparkles, TrendingUp, Wallet2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/src/components/buttons/button';
 import {
   Card,
@@ -149,10 +150,12 @@ export default function PortfolioDashboard() {
             <Wallet2 className="h-4 w-4" />
             Manage wallets
           </Button>
-          <Button className="gap-2 bg-pink-600 text-white hover:bg-pink-700">
-            <Sparkles className="h-4 w-4" />
-            Create drop
-          </Button>
+          <Link to="/user/drops/new">
+            <Button className="gap-2 bg-pink-600 text-white hover:bg-pink-700">
+              <Sparkles className="h-4 w-4" />
+              Create drop
+            </Button>
+          </Link>
         </div>
       </section>
 

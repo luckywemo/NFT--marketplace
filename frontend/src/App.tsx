@@ -5,6 +5,7 @@ import SignUp from './pages/auth/sign-up/sign-up';
 import SignOut from './pages/auth/components/modal-confirm/signout';
 import PortfolioDashboard from './pages/user/portfolio/PortfolioDashboard';
 import NotificationCenter from './pages/user/notifications/NotificationCenter';
+import CreateDropWizard from './pages/user/drops/CreateDropWizard';
 
 // Import account management pages
 import ProfilePage from './pages/user/profile/profile';
@@ -183,6 +184,7 @@ function AppContent(): ReactElement {
             <Route path="/user/password" element={<PasswordPage />} />
             <Route path="/user/portfolio" element={<PortfolioDashboard />} />
             <Route path="/user/notifications" element={<NotificationCenter />} />
+            <Route path="/user/drops/new" element={<CreateDropWizard />} />
           </Route>
         </Routes>
       </AppLayout>
