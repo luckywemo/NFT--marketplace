@@ -5,6 +5,7 @@ import { Button } from '@/src/components/buttons/button';
 import DottieMascot3D from '@/src/pages/landing-page/DottieMascot3D';
 import ErrorBoundary from '@/src/components/alerts/ErrorBoundary';
 import { useAuth } from '@/src/pages/auth/context/useAuthContext';
+import WalletOnboardingSection from '@/src/pages/landing-page/WalletOnboardingSection';
 
 // import { ReactElement } from 'react';
 
@@ -138,6 +139,8 @@ export default function LandingPage() {
             </div>
           </motion.div>
         </section>
+
+        <WalletOnboardingSection />
 
         {/* CTA Section - Only show when not authenticated */}
         {!isAuthenticated && (
