@@ -3,6 +3,8 @@ import './globals.css';
 import SignIn from './pages/auth/sign-in/sign-in';
 import SignUp from './pages/auth/sign-up/sign-up';
 import SignOut from './pages/auth/components/modal-confirm/signout';
+import PortfolioDashboard from './pages/user/portfolio/PortfolioDashboard';
+import NotificationCenter from './pages/user/notifications/NotificationCenter';
 
 // Import account management pages
 import ProfilePage from './pages/user/profile/profile';
@@ -179,6 +181,8 @@ function AppContent(): ReactElement {
             {/* User routes */}
             <Route path="/user/profile" element={<ProfilePage />} />
             <Route path="/user/password" element={<PasswordPage />} />
+            <Route path="/user/portfolio" element={<PortfolioDashboard />} />
+            <Route path="/user/notifications" element={<NotificationCenter />} />
           </Route>
         </Routes>
       </AppLayout>

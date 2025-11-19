@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { UserCircle, Key, LogOut } from 'lucide-react';
+import { UserCircle, Key, LogOut, TrendingUp, BellRing } from 'lucide-react';
 
 interface SidebarLink {
   label: string;
@@ -22,6 +22,16 @@ export default function AccountSidebar() {
       label: 'Password',
       href: '/user/password',
       icon: <Key className="h-5 w-5 text-pink-700" />
+    },
+    {
+      label: 'Portfolio',
+      href: '/user/portfolio',
+      icon: <TrendingUp className="h-5 w-5 text-pink-700" />
+    },
+    {
+      label: 'Notifications',
+      href: '/user/notifications',
+      icon: <BellRing className="h-5 w-5 text-pink-700" />
     },
     {
       label: 'Sign Out',
